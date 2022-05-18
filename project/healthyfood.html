@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+   background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-style: italic;
+
+  text-align: center;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #04AA6D;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;}
+  @media screen and (max-width: 600px) {
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2> Healthy Food</h2>
+</div>
+
+<div id="navbar">
+   <a href="home.html">Home</a>
+  <a href="healthyfood.html">healthy food</a>
+  <a href="fast%20food.html">fast food</a>
+ <a href="superfood.html">superfood</a>
+  <a href="form2.html">register</a>
+</div>
+
+<div class="content">
+<img src="fqw.png" width="100%">
+<h2>healthy food</h2>
+<div>
+    Abstract
+        A qualitative research project was conducted to examine 
+        the meanings of foods within adolescent female 
+        culture by looking at ways in which young women classify and use foods.
+        Ninety-three young women ages 11 to 18 participated in semi-structured
+        individual interviews or small group discussions in which they talked about what,
+        where, and with whom they ate. The main food classification scheme that 
+        emerged from the data analysis was the dichotomization of foods into two 
+        groups: “healthy foods” and “junk foods”. The study participants
+        agreed on the core foods and common characteristics of foods in each group. They 
+    Résumé
+</div>
+<table id="customers">
+  <tr>
+    <th>Food</th>
+    <th>Type</th>
+    
+  </tr>
+  <tr>
+    <td>Seafood</td>
+    <td>Fish</td>
+   
+  <tr>
+    <td>Meat</td>
+    <td>Chicken, Pork, Veal</td>
+  
+  </tr>
+  <tr>
+    <td>Cheese</td>
+    <td>Herbed goat cheese, Nutty cheese, Gruyere</td>
+   
+  </tr>
+  <tr>
+    <td>Less Ripe</td>
+    <td>Lime, Gooseberry</td>
+ 
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>Green apple, Citrus, Passion fruit</td>
+
+  </tr>
+  <tr>
+    <td>More Ripe</td>
+    <td>Grapefruit, Peach, Melon</td>
+   
+  </tr>
+  <tr>
+    <td>Oaked</td>
+    <td>Vanilla, Smoke</td>
+    
+  </tr>
+  <tr>
+    <td>Vermentino</td>
+    <td>More floral and citrus</td>
+   
+  </tr>
+  <tr>
+    <td>Gruner Veltiner</td>
+    <td>More lime, lemon, and grapfruit</td>
+ 
+  </tr>
+  <tr>
+    <td>Verdejo</td>
+    <td>More texture and peach</td>
+   
+  </tr>
+</table>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <center>
+<div class="pagination">
+  <a href="home.html">&laquo;</a>
+  <a href="home.html">1</a>
+  <a href="healthyfood.html">2</a>
+  <a href="fast%20food.html">3</a>
+  <a href="superfood.html">4</a>
+  <a href="form2.html">5</a>
+  <a href="fast%20food.html">&raquo;</a>
+</div></center>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

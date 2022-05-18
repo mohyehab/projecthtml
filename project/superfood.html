@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+   background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-style: italic;
+
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #04AA6D;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;}
+  #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.imginner{
+  width: 100%;
+  height: 550px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+.imginner{
+  width: 100%;
+  height: 450px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+.imginner{
+  width: 100%;
+  height: 350px;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>superfood</h2>
+</div>
+
+<div id="navbar">
+   <a href="home.html">Home</a>
+  <a href="healthyfood.html">healthy food</a>
+  <a href="fast%20food.html">fast food</a>
+  <a href="superfood.html">super food</a>
+  <a href="form2.html">register</a>
+</div>
+
+<div class="content">
+  <img src="gettyimages-855098134-1024x1024.jpg" width="100%">
+<h2>Super Food</h2>
+<div>
+    Abstract
+        A qualitative research project was conducted to examine 
+        the meanings of foods within adolescent female 
+        culture by looking at ways in which young women classify and use foods.
+        Ninety-three young women ages 11 to 18 participated in semi-structured
+        individual interviews or small group discussions in which they talked about what,
+        where, and with whom they ate. The main food classification scheme that 
+        emerged from the data analysis was the dichotomization of foods into two 
+        groups: “healthy foods” and “junk foods”. The study participants
+        agreed on the core foods and common characteristics of foods in each group. They 
+    Résumé
+</div>
+<table id="customers">
+  <tr>
+    <th>Food</th>
+    <th>Type</th>
+    
+  </tr>
+  
+  <tr>
+    <td>Less Ripe</td>
+    <td>Lime, Gooseberry</td>
+ 
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>Green apple, Citrus, Passion fruit</td>
+
+  </tr>
+  <tr>
+    <td>More Ripe</td>
+    <td>Grapefruit, Peach, Melon</td>
+   
+  </tr>
+  <tr>
+    <td>Oaked</td>
+    <td>Vanilla, Smoke</td>
+    
+  </tr>
+  <tr>
+    <td>Vermentino</td>
+    <td>More floral and citrus</td>
+   
+  </tr>
+  <tr>
+    <td>Gruner Veltiner</td>
+    <td>More lime, lemon, and grapfruit</td>
+ 
+  </tr>
+  <tr>
+    <td>Verdejo</td>
+    <td>More texture and peach</td>
+   
+  </tr>
+</table>
+<h2>super food</h2>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="sui.jpg" alt="Dark Leafy Vegetables" stylex="width:100%" class="imginner">
+      <h3>Dark Leafy Vegetables</h3>
+      <p>excellent source of nutrients:  folate, zinc, calcium, iron, magnesium, vitamin c, and fiber</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="top-superfoods-2-500x500.jpg" alt="Berries" stylex="width:100%" class="imginner">
+      <h3>Berries</h3>
+      <p>loaded with vitamins minerals, fiber, and antioxidants.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="top-superfoods-4-500x500.jpg" alt="Kefir (and Yogurt)" stylex="width:100%" class="imginner">
+      <h3> Kefir (and Yogurt)</h3>
+      <p>contains protein, calcium, B vitamins, potassium, and probiotics</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="superfoods-500x500.jpg" alt="Avocado" stylex="width:100%" class="imginner">
+      <h3>Avocado</h3>
+      <p>Rich in fiber, vitamins, minerals, healthy fats, high in monounsaturated fats</p>
+    </div>
+  </div>
+
+
+</div>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <center>
+<div class="pagination">
+  <a href="fast%20food.html">&laquo;</a>
+  <a href="home.html">1</a>
+  <a href="healthyfood.html">2</a>
+  <a href="fast%20food.html">3</a>
+  <a href="superfood.html">4</a>
+  <a href="form2.html">5</a>
+  <a href="form2.html">&raquo;</a>
+</div></center>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

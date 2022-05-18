@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+   background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-style: italic;
+
+  text-align: center;
+}
+img.imgcr{
+  padding-left: 13px;
+
+}
+img.imgcl{
+  padding-right: 13px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #04AA6D;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}.pagination {
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Pones</h2>
+  <h2>thanks for your register</h2>
+</div>
+
+<div id="navbar">
+   <a href="home.html">Home</a>
+  <a href="form2.html">register</a>
+</div>
+
+<div class="content">
+  <img src="fqw.png" width="100%">
+
+<h2>superfood</h2>
+
+      <img src="gettyimages-855098134-1024x1024.jpg" class="imgcl" alt="Menu" style="width:40%" align="left">
+  <a href="/project/Superfoods_Recent_Data_on_their_Role_in_the_Preven.pdf" download>Superfoods_Recent_Data_on_their_Role_in_the_Preven.pdf</a>
+    </div><br>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
+
+<br>

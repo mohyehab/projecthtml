@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+   background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #04AA6D;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;}
+  input[type=text],input[type=tel],input[type=submit], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 72%;
+  width-feed:content;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 68%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Food</h2>
+</div>
+
+<div id="navbar">
+   <a href="home.html">Home</a>
+  <a href="healthyfood.html">healthy food</a>
+  <a href="fast%20food.html">fast food</a>
+ <a href="superfood.html">superfood</a>
+  <a href="form2.html">register</a>
+</div>
+
+<div class="content">
+ 
+<img src=" fqw.png" width="100%">
+
+<div class="container">
+  <form method="Get"action="pones.php">
+    <fieldset>
+      <legend>log in</legend>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="Adress">Adress</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Adress" name="Adress" placeholder="Your Adress.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="num">phone number</label>
+    </div>
+    <div class="col-75">
+      <input type="tel" id="num" name="num" pattern="[0-9]{11}" maxlength="11" minlength="11" placeholder="Your phone num.." required>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="MAIL"> E-mail</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="MAIL" name="MAIL" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your MAIL.." required>
+    </div>
+  </div> 
+  <div class="row">
+    <div class="col-25">
+      <label for="pass">Password</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="pass" pattern="[A-Z](?=.*\d)(?=.*[a-z])(?=.*[-_#&\*\.]).{7}" name="pass" placeholder="Your Password.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">favouit food</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+         <option value="fast food">fast food</option>
+         <option value="superfood">superfood</option>
+        <option value="healthyfood">healthyfood</option>
+       
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for=" gender"> gendere</label>
+    </div>
+    <div class="col-75" >
+      <label>mail</label>
+ <input type="radio" name="mail" >
+ <label>femail</label>
+ <input type="radio" name="femail" >
+    </div>
+  </div>
+
+
+  <br>
+  <div class="row">
+    <input type="submit" formaction="pones.html" value="log in">
+  </div> </fieldset>
+  </form>
+  <br><br>
+
+  <center>
+<div class="pagination">
+  <a href="superfood.html">&laquo;</a>
+  <a href="home.html">1</a>
+  <a href="healthyfood.html">2</a>
+  <a href="fast%20food.html">3</a>
+  <a href="superfood.html">4</a>
+  <a href="form2.html">5</a>
+  <a href="form2.html">&raquo;</a>
+</div></center>
+</div>
+
+
+ 
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+function myFunction2() {
+  const message= document.getElementById("p1");
+  message.innerHTML = "";
+  let x = document.getElementById("num").value;
+  try {
+    if(x == "") throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x.length() < 11) throw "too low";
+    if(x.length() > 11) throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+  finally {
+    document.getElementById("num").value = "";
+  }}
+</script>
+
+</body>
+</html>
